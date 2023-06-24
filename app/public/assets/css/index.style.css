@@ -1,0 +1,97 @@
+.register-container{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    padding-bottom: 50px
+}
+
+.register-title{
+    text-align: center;
+}
+
+.form{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+input{
+    height: 26px;
+    border: 1px solid rgb(199, 199, 199);
+    padding-left: 5px;
+}
+.textarea{
+    border: 1px solid rgb(199, 199, 199);
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 250px;
+}
+input:focus{
+    outline: 1px solid #039144;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+/* first line */
+.row:nth-child(2) > .col:nth-child(1){
+    width: 60%;
+}
+.row:nth-child(2) > .col:nth-child(2){
+    width: 40%;
+}
+/* second line */
+.row:nth-child(3) > .col:nth-child(1){
+    width: 40%;
+}
+/* third line */
+.row:nth-child(4) > .col:nth-child(1), .col:nth-child(2), .col:nth-child(3){
+    width: 35%;
+}
+/*  */
+.row:nth-child(6) > .col:nth-child(1){
+    width: 100%;
+}
+.row:nth-child(7) > .col:nth-child(1){
+    width: 100%;
+}
+
+
+.row:nth-child(8){
+    justify-content: flex-end;
+    height: 35px;
+}
+.row:nth-child(8) > .button-container{
+    display: flex;
+    gap: 5px;
+    width: 200px;
+}
+.button-container button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.button-container button:nth-child(1){
+    background-color: rgb(205, 37, 37);
+}
+.button-container button:nth-child(1):hover{
+    background-color: rgb(140, 26, 26);
+}
+.button-container button:nth-child(2){
+    background-color: rgb(44, 211, 92);
+}
+.button-container button:nth-child(2):hover{
+    background-color: rgb(32, 140, 62);
+}
